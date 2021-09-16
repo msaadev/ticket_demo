@@ -26,10 +26,10 @@ class _MainViewState extends State<MainView> {
       foregroundColor: Colors.white,
       centerTitle: true,
       leading: Icon(Icons.directions_bus_filled),
-      title: Text('TEST APP '),
+      title: Text(
+          context.watch<MainNotifier>().getPage == 0 ? 'TEST APP' : 'Tickets'),
     );
   }
-
 
   BottomNavigationBar buidBottomNavigation() {
     return BottomNavigationBar(
