@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lib_msaadev/lib_msaadev.dart';
 
-import 'image/cahce_image.dart';
+import 'cahce_image.dart';
 
 class StackedImage extends StatelessWidget {
   final String link, label;

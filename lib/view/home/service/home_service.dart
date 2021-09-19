@@ -28,3 +28,4 @@ class HomeService extends IHomeService {
 }
 
 //https://anybwnk52i.execute-api.eu-central-1.amazonaws.com/test/departureTimes
+// https://anybwnk52i.execute-api.eu-central-1.amazonaws.com/test/bac96e9b-717b-40b5-8198-6bfe84fbe081/ticket

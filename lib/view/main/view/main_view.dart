@@ -1,8 +1,10 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:lib_msaadev/lib_msaadev.dart';
 import 'package:provider/provider.dart';
 import 'package:ticket_try/core/constants/app_constants.dart';
 import 'package:ticket_try/core/init/provider/main_notifier.dart';
+import 'package:ticket_try/view/auth/view/login_view.dart';
 import 'package:ticket_try/view/home/view/home_view.dart';
 import 'package:ticket_try/view/tickets/view/tickets_view.dart';
 
@@ -26,7 +28,13 @@ class _MainViewState extends State<MainView> {
       backgroundColor: context.theme.primaryColor,
       foregroundColor: Colors.white,
       centerTitle: true,
-      leading: const Icon(Icons.directions_bus_filled),
+      leading: const Icon(Icons.directions_bus_filled).onTap(() =>
+          AwesomeDialog(
+                  context: context,
+                  width: context.customWidth(1),
+                  dialogType: DialogType.NO_HEADER,
+                  body: LoginView())
+              .show()),
       title: Text(
           context.watch<MainNotifier>().getPage == 0 ? 'TEST APP' : 'Tickets'),
     );

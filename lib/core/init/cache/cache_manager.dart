@@ -17,4 +17,7 @@ class CacheManager {
      instance._preferences ??= await SharedPreferences.getInstance();
   }
 
+
+  
+
 }

@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:lib_msaadev/lib_msaadev.dart';
-import 'package:ticket_try/core/components/stacked_image.dart';
+import 'package:ticket_try/core/components/image/stacked_image.dart';
 import 'package:ticket_try/core/constants/app_constants.dart';
 import 'package:ticket_try/view/home/model/tour_model.dart';
 import 'package:ticket_try/view/home/service/home_service.dart';
