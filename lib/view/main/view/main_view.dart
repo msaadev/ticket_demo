@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lib_msaadev/lib_msaadev.dart';
 import 'package:provider/provider.dart';
 import 'package:ticket_try/core/constants/app_constants.dart';
 import 'package:ticket_try/core/init/provider/main_notifier.dart';
@@ -22,10 +23,10 @@ class _MainViewState extends State<MainView> {
 
   AppBar buildAppBar() {
     return AppBar(
-      backgroundColor: AppConstants.INTERNATIONAL_ORANGE,
+      backgroundColor: context.theme.primaryColor,
       foregroundColor: Colors.white,
       centerTitle: true,
-      leading: Icon(Icons.directions_bus_filled),
+      leading: const Icon(Icons.directions_bus_filled),
       title: Text(
           context.watch<MainNotifier>().getPage == 0 ? 'TEST APP' : 'Tickets'),
     );
